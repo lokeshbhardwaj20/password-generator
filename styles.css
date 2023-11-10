@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 450px;
+  background-color: #34495e; /* Dark blue background color */
+  color: #ecf0f1; /* Light text color */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+#generatedPassword{
+  width: fit-content;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 50px; /* Adjust the width for the number input */
+}
+
+button {
+  background-color: #e74c3c; /* Red button color */
+  color: white;
+}
+
+button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.result {
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}
